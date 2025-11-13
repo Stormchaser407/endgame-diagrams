@@ -1,0 +1,21 @@
+%% Endgame Diagram v1.0 — Endgame System Overview
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph LR;
+  EG[Endgame System<br/>LLC Framework]:::core --> CER[Cerberus<br/>Security & OSINT Platform]:::head;
+  EG --> FOR[ForgeOS<br/>Operational Toolkit]:::head;
+  EG --> TRA[Training & Doctrine]:::head;
+  EG --> AUT[Automation & Agents]:::head;
+  EG --> VIS[Branding & Visual Identity]:::head;
+
+  CER --> REC[Recon]:::node;
+  CER --> WRA[Wraith]:::node;
+  CER --> LEG[Legion]:::node;
+  CER --> AEG[Aegis]:::node;
+  CER --> HES[Hestia]:::node;
+  CER --> PRO[Prometheus]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

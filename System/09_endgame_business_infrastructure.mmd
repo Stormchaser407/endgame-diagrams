@@ -1,0 +1,25 @@
+%% Endgame Diagram v1.0 — Endgame Business Infrastructure
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  BIZ["ENDGAME BUSINESS INFRASTRUCTURE<br/>Organizational Backbone"]:::core;
+
+  BIZ --> LLC["Endgame Training & Consultation<br/>Solutions LLC"]:::head;
+  BIZ --> SERVICES["Professional Services"]:::head;
+  BIZ --> BRAND["Brand System"]:::head;
+  BIZ --> AGENTS["AI Agents & Automation Workforce"]:::head;
+  BIZ --> WEB["Web & Digital Presence"]:::head;
+
+  LLC --> L1["Business Ops, Legal, Finance"]:::node;
+  SERVICES --> S1["Threat Assessment &<br/>Safety Planning"]:::node;
+  SERVICES --> S2["OSINT Investigations"]:::node;
+  SERVICES --> S3["Emergency Management & Training"]:::node;
+
+  BRAND --> B1["Logos, Taglines, Visual Identity"]:::node;
+  AGENTS --> A1["Super Ninja, Motion,<br/>Local LLM Chain"]:::node;
+  WEB --> W1["Website, Subreddit, Public Docs"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

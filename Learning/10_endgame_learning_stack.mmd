@@ -1,0 +1,24 @@
+%% Endgame Diagram v1.0 — Endgame Learning Stack
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  LEARN["ENDGAME LEARNING STACK<br/>Continuous Development System"]:::core;
+
+  LEARN --> L1["NotebookLM<br/>Knowledge Ingestion & SME Models"]:::head;
+  LEARN --> L2["ChatGPT 5.1<br/>Core Reasoning & Research"]:::head;
+  LEARN --> L3["Figma / FigJam<br/>Visual Thinking & Diagrams"]:::head;
+  LEARN --> L4["Obsidian / Mnemosyne<br/>Long-term Notes & Reflection"]:::head;
+  LEARN --> L5["Jools / Automation Tools<br/>Scripting & Repetitive Tasks"]:::head;
+  LEARN --> L6["Linux / Docker / LLM Training<br/>Technical Mastery"]:::head;
+
+  L1 --> N1["Books, PDFs, Articles"]:::node;
+  L2 --> N2["Reasoning, Synthesis, Agents"]:::node;
+  L3 --> N3["Maps, UX, System Design"]:::node;
+  L4 --> N4["Journals, Essays, Concept Dev"]:::node;
+  L5 --> N5["Automations, Pipelines"]:::node;
+  L6 --> N6["Servers, Clusters, Deployments"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

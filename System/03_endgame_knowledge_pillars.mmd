@@ -1,0 +1,31 @@
+%% Endgame Diagram v1.0 — Endgame Knowledge Pillars
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  ENG["ENDGAME KNOWLEDGE SYSTEM<br/>The Intellectual Arsenal"]:::core;
+
+  ENG --> OPSEC["OPSEC & Security Engineering"]:::head;
+  ENG --> OSINT["OSINT & Intelligence Tradecraft"]:::head;
+  ENG --> PSY["Behavioral Psychology<br/>& Threat Analysis"]:::head;
+  ENG --> PHIL["Philosophy & Ethical Reasoning"]:::head;
+  ENG --> TECH["AI, Linux, & Systems Engineering"]:::head;
+
+  OPSEC --> OP1["Risk Models"]:::node;
+  OPSEC --> OP2["Access Control"]:::node;
+
+  OSINT --> OS1["People Recon"]:::node;
+  OSINT --> OS2["Digital Footprint"]:::node;
+
+  PSY --> PS1["Violence Dynamics"]:::node;
+  PSY --> PS2["Stress Behavior Patterns"]:::node;
+
+  PHIL --> PH1["Stoicism"]:::node;
+  PHIL --> PH2["Narrative Identity"]:::node;
+
+  TECH --> T1["Docker & Infra"]:::node;
+  TECH --> T2["Local LLMs"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

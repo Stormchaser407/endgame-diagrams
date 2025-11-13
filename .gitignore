@@ -1,0 +1,38 @@
+# Endgame Diagrams - Git Ignore File
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+
+# Build/Export Files (optional - uncomment if you don't want to track exports)
+# *.png
+# *.svg
+# *.pdf
+
+# Logs
+*.log
+
+# Node modules (if using Mermaid CLI)
+node_modules/
+package-lock.json
+
+# Python (if using any Python scripts)
+__pycache__/
+*.pyc
+*.pyo
+
+# Archives (optional - uncomment if you don't want to track ZIP files)
+# *.zip

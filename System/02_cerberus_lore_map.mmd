@@ -1,0 +1,23 @@
+%% Endgame Diagram v1.0 — Cerberus Lore Map
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  CER["CERBERUS - The Guardian of Endgame"]:::core;
+  CER --> REC["Recon - The Eye<br/>Sees Patterns Others Miss"]:::head;
+  CER --> WRA["Wraith - The Shadow<br/>Moves Unseen in the Field"]:::head;
+  CER --> LEG["Legion - The Mind<br/>Thinks in Parallel, Never Sleeps"]:::head;
+  CER --> AEG["Aegis - The Shield<br/>Protects the Threshold"]:::head;
+  CER --> HES["Hestia - The Hearth<br/>Automates the Sanctuary"]:::head;
+  CER --> PRO["Prometheus - The Forge<br/>Stores, Shapes, Remembers"]:::head;
+
+  REC --> RECa["Omniscience - OSINT, Signals,<br/>Intelligence Collection"]:::node;
+  WRA --> WRAa["Ghostwalking - Mobile Surveillance<br/>& Covert Recon"]:::node;
+  LEG --> LEGa["Many-Minds - LLM Inference,<br/>Model Serving, Analysis"]:::node;
+  AEG --> AEGa["Vigil - Local Sensors<br/>& Pi Sentinel Systems"]:::node;
+  HES --> HESa["Sanctum - Home Assistant<br/>& Environmental Automation"]:::node;
+  PRO --> PROa["The Archive - Data Storage,<br/>Backups, Ingestion"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

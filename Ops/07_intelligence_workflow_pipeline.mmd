@@ -1,0 +1,24 @@
+%% Endgame Diagram v1.0 — Intelligence Workflow Pipeline
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  FLOW["ENDGAME INTELLIGENCE WORKFLOW<br/>The Path of Information"]:::core;
+
+  FLOW --> S1["1. Data Intake & Signals"]:::head;
+  FLOW --> S2["2. OSINT & Collection Modules"]:::head;
+  FLOW --> S3["3. LLM Processing<br/>Legion/Aegis"]:::head;
+  FLOW --> S4["4. Pattern Recognition<br/>& Threat Scoring"]:::head;
+  FLOW --> S5["5. Analyst Review<br/>Recon"]:::head;
+  FLOW --> S6["6. Reporting & Actionable Insights"]:::head;
+
+  S1 --> N1["Phone, Email, Social,<br/>PDFs, Logs"]:::node;
+  S2 --> N2["Dehashed, PDL, Shodan,<br/>Sherlock, Crawlers"]:::node;
+  S3 --> N3["Summaries, Entity Extraction,<br/>Chains"]:::node;
+  S4 --> N4["Behavioral Models, Risk Flags"]:::node;
+  S5 --> N5["Interpretation, Judgment,<br/>Expertise"]:::node;
+  S6 --> N6["Reports, Safety Plans, Exports"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

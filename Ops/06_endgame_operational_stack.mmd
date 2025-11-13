@@ -1,0 +1,24 @@
+%% Endgame Diagram v1.0 — Endgame Operational Stack
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  OPS["ENDGAME OPERATIONAL STACK<br/>How the System Executes"]:::core;
+
+  OPS --> INTAKE["1. Threat / Inquiry Intake"]:::head;
+  OPS --> RECON["2. Recon & Intelligence Gathering"]:::head;
+  OPS --> ANALYSIS["3. Analysis & Pattern Recognition"]:::head;
+  OPS --> ACTION["4. Action Planning & Mitigation"]:::head;
+  OPS --> REPORT["5. Reporting & Documentation"]:::head;
+  OPS --> ARCHIVE["6. Archival & Knowledge Integration"]:::head;
+
+  INTAKE --> N1["Signals, Requests, Alerts"]:::node;
+  RECON --> N2["OSINT, Digital Trace, Field Intel"]:::node;
+  ANALYSIS --> N3["LLM Support, Behavioral Models,<br/>Risk Scoring"]:::node;
+  ACTION --> N4["Mitigation Plans, Recommendations"]:::node;
+  REPORT --> N5["Reports, Briefings, Dashboards"]:::node;
+  ARCHIVE --> N6["Prometheus Storage, NotebookLM,<br/>Long-term Memory"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

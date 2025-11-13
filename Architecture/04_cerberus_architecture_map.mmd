@@ -1,0 +1,22 @@
+%% Endgame Diagram v1.0 — Cerberus Architecture Map
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  CER["CERBERUS ARCHITECTURE<br/>Operational Blueprint"]:::core;
+
+  CER --> API["FastAPI Backend"]:::head;
+  CER --> LLM["Local LLM Engine<br/>Legion/Aegis"]:::head;
+  CER --> DB["Data Layer<br/>Prometheus/Storage"]:::head;
+  CER --> UI["Frontend / Dashboard"]:::head;
+  CER --> MOD["Recon Modules"]:::head;
+
+  API --> APIa["Auth, Routing, Endpoints"]:::node;
+  LLM --> LLMa["Inference, Summaries, Scoring"]:::node;
+  DB --> DBa["JSON Logs, Reports, Ingestion"]:::node;
+  UI --> UIa["React/Figma UI, Theming"]:::node;
+  MOD --> MODa["OSINT Tools: Dehashed, PDL,<br/>Shodan, Sherlock"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;

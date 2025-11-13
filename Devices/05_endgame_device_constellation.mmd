@@ -1,0 +1,24 @@
+%% Endgame Diagram v1.0 — Endgame Device Constellation
+%% Last Updated: 2024
+%% Maintainer: Endgame Diagram Agent
+
+graph TD;
+  SYS["ENDGAME DEVICE CONSTELLATION<br/>Operational Map"]:::core;
+
+  SYS --> REC["Recon<br/>LG Gram"]:::head;
+  SYS --> LEG["Legion<br/>UM890 Pro"]:::head;
+  SYS --> WRA["Wraith<br/>Pixel 10 Pro XL"]:::head;
+  SYS --> AEG["Aegis<br/>Raspberry Pi 5"]:::head;
+  SYS --> HES["Hestia<br/>Raspberry Pi 5 – Home Assistant"]:::head;
+  SYS --> PRO["Prometheus<br/>Server/NAS"]:::head;
+
+  REC --> RECflow["OSINT, Analysis, Field Intel"]:::node;
+  LEG --> LEGflow["Compute, LLM Ops, eGPU Tasks"]:::node;
+  WRA --> WRAflow["Mobile Ops, Covert Recon"]:::node;
+  AEG --> AEGflow["Local Surveillance, Sentinel Tasks"]:::node;
+  HES --> HESflow["Home Automation, Safety Sensors"]:::node;
+  PRO --> PROflow["Data Storage, Backups, Archives"]:::node;
+
+  classDef core fill:#0A0D10,stroke:#C6A667,stroke-width:2px,color:#F7F8F9;
+  classDef head fill:#394047,stroke:#D02A1E,stroke-width:1.8px,color:#F7F8F9;
+  classDef node fill:#3C8FB7,stroke:#57F2A3,stroke-width:1.4px,color:#F7F8F9;
